@@ -1,0 +1,205 @@
+.patientprofile {
+    display: flex;
+    height: 100%;
+    padding-top: 44px;
+
+    section {
+        height: 100%;
+    }
+
+    .first {
+        flex-basis: 30%;
+        background-color: rgba(189, 189, 189, 0.39);
+        padding: 10px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: #26999e;
+            font-size: 1rem;
+            margin: 20px 0px;
+        }
+
+        .rows {
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .row {
+                display: flex;
+                gap: 5px;
+
+                .key {
+                    color: #333333;
+                }
+
+                .value {
+                    color: #828282;
+
+                    select {
+                        padding: 4px 8px;
+                        border: 1px solid #ababab;
+                        border-radius: 4px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        -ms-border-radius: 4px;
+                        -o-border-radius: 4px;
+                        width: 100%;
+                    }
+                }
+
+                a {
+                    color: #39f;
+                }
+            }
+
+            .row.one {
+                flex-direction: column;
+            }
+        }
+
+        .overall-h1 {
+            margin-top: 40px;
+        }
+
+        .ratings__main {
+            display: flex;
+
+            .rating {
+                flex: 1;
+
+                .rate {
+                    font-size: 40px;
+                }
+
+                .good {
+                    color: #2ac940;
+                }
+
+                .bad {
+                    color: #ff5f58;
+                }
+
+                .average {
+                    color: #fa9917;
+                }
+
+                .desc {
+                    font-size: 12px;
+                    color: #828282;
+                }
+            }
+        }
+    }
+
+    .second {
+        flex-basis: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 40px;
+
+        .container-row-1 {
+            display: flex;
+            gap: 30px;
+
+            .data {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .card {
+                    height: 100%;
+                    flex: 1;
+                }
+
+                .card.biometric {
+                    .row {
+                        display: flex;
+
+                        .key {
+                            flex-basis: 40%;
+                        }
+
+                        .value {
+                            flex-basis: 60%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-row-2 {
+            .card.currentmedications {
+                .row {
+                    display: flex;
+
+                    .key {
+                        flex-basis: 40%;
+                    }
+
+                    .value {
+                        flex-basis: 60%;
+                    }
+                }
+
+                .row.start {
+                    color: #26999e;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .data {
+            h1 {
+                color: #26999e;
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+            table {
+                color: #4f4f4f;
+                border-collapse: collapse;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                width: 100%;
+
+                thead {
+                    font-size: 14px;
+                    background-color: #f2f2f2;
+                    color: #26999e;
+                }
+
+                tbody {
+                    font-size: 12px;
+                }
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
+
+            th,
+            td {
+                text-align: start;
+                padding: 1px 4px;
+                height: 24px;
+            }
+
+            .card {
+                padding: 10px;
+                color: #4f4f4f;
+                font-size: 14px;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                width: 100%;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
+        }
+    }
+}

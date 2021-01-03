@@ -1,0 +1,76 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/doctor.jpg');
+    background-size: cover;
+    height: 100%;
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 120px 0px;
+        width: 467px;
+        height: 217px;
+        background-color: rgba(200, 200, 200, 0.6);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        h1 {
+            color: #26999e;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #828282;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+    }
+
+    main {
+        display: flex;
+        width: 100%;
+
+        .cat {
+            flex-basis: 100%;
+            height: 228px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+
+            .title {
+                margin-top: 14px;
+                color: white;
+            }
+
+            .subtitle {
+                margin-top: 5px;
+                color: #4f4f4f;
+                font-size: 12px;
+            }
+        }
+
+        .one {
+            background-color: rgba(38, 153, 158, 0.79);
+        }
+
+        .two {
+            background-color: rgba(33, 118, 204, 0.86);
+        }
+
+        .three {
+            background-color: rgba(51, 153, 255, 0.89);
+        }
+    }
+}

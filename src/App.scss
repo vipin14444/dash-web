@@ -1,0 +1,10 @@
+@import "./Theme.scss";
+
+body {
+    font-family: $font;
+}
+
+.app {
+    height: 100vh;
+    position: relative;
+}
